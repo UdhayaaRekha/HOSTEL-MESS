@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #650D1B; /* Dark red background for the header */
+    padding: 1rem;
+}
+
+nav .logo {
+    color: white; /* White logo text */
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* White text for nav links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the first box */
+.first-box {
+    background-color: #650D1B;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the second box */
+.second-box {
+    background-color: #650D1B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* General styling for the boxes */
+.box {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white; 
+}
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    background-image: url('image.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container {
+    background-color:#650D1B;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(228, 218, 218, 0.1); 
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.contact-header h2 {
+    font-size: 32px;
+    color:white; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: black; 
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 30px;
+    text-align: left; 
+}
+
+.contact-column {
+    padding: 20px;
+    background-color: #f7afaf;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-column h3 {
+    font-size: 20px;
+    color: #650D1B;
+    margin-bottom: 15px;
+}
+
+.contact-column h3 i {
+    margin-right: 10px; 
+    color: #650D1B;
+    
+        font-size: 1.5rem;
+        
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr; 
+    }
+}
